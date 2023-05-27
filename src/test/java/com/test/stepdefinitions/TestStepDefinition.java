@@ -1,13 +1,14 @@
 package com.test.stepdefinitions;
 
 import io.cucumber.java.en.And;
+import net.serenitybdd.screenplay.Actor;
 
 import static net.serenitybdd.rest.RestRequests.given;
 
 public class TestStepDefinition {
 
-    @And("Actor use one api")
-    public void actorUseOneApi() {
+    @And("{actor} use one api")
+    public void actorUseOneApi(Actor actor) {
         given()
                 .given()
                 .get()

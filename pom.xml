@@ -11,6 +11,7 @@
         <serenity.version>3.6.7</serenity.version>
         <serenity.maven.version>3.6.7</serenity.maven.version>
         <serenity.cucumber.version>3.6.7</serenity.cucumber.version>
+        <encoding>UTF-8</encoding>
     </properties>
     <dependencies>
        <dependency>
@@ -86,7 +87,7 @@
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <tags>${tags}</tags>
+                    <tags>test</tags>
                 </configuration>
                 <executions>
                     <execution>

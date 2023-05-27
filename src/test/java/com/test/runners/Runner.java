@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         monochrome = true,
+        tags = "@test",
         features = {
                 "src/test/resources/Test.feature"
         },
